@@ -11,3 +11,9 @@ In contrast, PoS does not require miners to solve complex mathematical problems 
 There are different variations of PoS, including Delegated Proof-of-Stake (DPoS), where users can delegate their stake to other users who act as "validators" and create new blocks on their behalf.
 
 Overall, Proof-of-Stake is a type of consensus algorithm that is used to secure and validate transactions on a blockchain network, and it offers an alternative to Proof-of-Work that is more energy-efficient and less resource-intensive.
+
+## Implementation
+
+This implementation includes a Block struct that represents a single block in the blockchain, with fields for the block data, the previous block's hash, the current block's hash, and the stake of the user who created the block.
+
+It also includes a Blockchain struct that represents the entire blockchain, with a vector of blocks. The Blockchain struct includes methods for adding a new block to the chain, validating a block, and selecting a validator for the next block based on their stake.
