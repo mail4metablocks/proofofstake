@@ -17,3 +17,15 @@ Overall, Proof-of-Stake is a type of consensus algorithm that is used to secure 
 This implementation includes a Block struct that represents a single block in the blockchain, with fields for the block data, the previous block's hash, the current block's hash, and the stake of the user who created the block.
 
 It also includes a Blockchain struct that represents the entire blockchain, with a vector of blocks. The Blockchain struct includes methods for adding a new block to the chain, validating a block, and selecting a validator for the next block based on their stake.
+
+### Sequence diagram
+
+![image](https://user-images.githubusercontent.com/117555665/208231901-8adcb743-745b-434a-83ab-8138b24eacd5.png)
+
+#### Steps
+
+The user sends a request to add a new block to the blockchain.
+The blockchain selects a validator for the new block based on their stake in the network.
+The blockchain validates the new block by checking its hash and the previous block's hash.
+If the block is valid, it is added to the chain.
+The blockchain confirms to the user that the block has been added.
